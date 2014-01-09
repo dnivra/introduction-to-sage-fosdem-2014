@@ -31,3 +31,8 @@
 *.xdy
 *.tdo
 *.tex.backup
+sagetex.sty
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+*.sagetex.sout
