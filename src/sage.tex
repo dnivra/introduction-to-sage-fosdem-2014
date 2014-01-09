@@ -1,0 +1,46 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  \setbeamercovered{transparent}
+}
+
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\title{An Introduction to Sage}
+
+\author[Arvind]
+{Arvind S Raj}
+
+\institute[Amrita]
+{
+  Department of Cybersecurity Systems and Networks\\
+  Amrita University, India
+}
+
+\date[FOSDEM 2014] % (optional)
+{1 February 2014 / FOSDEM}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\end{document}
