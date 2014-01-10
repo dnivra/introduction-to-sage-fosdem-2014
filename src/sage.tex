@@ -82,4 +82,29 @@
   \end{itemize}
 \end{frame}
 
+\begin{sagesilent}
+ y = var('y')
+ t = var('t')
+\end{sagesilent}
+
+\begin{frame}{Algebra}
+  \begin{itemize}
+    \item Factorizing polynomials.
+    \begin{itemize}
+      \item $factor(x^{4} - 15 x^{3} + 84 x^{2} - 208 x + 192)$ = $\sage{factor(x^4 - 15*x^3 + 84*x^2 - 208*x + 192)}$
+      \item $factor(x^{3} - 6 x^{2} +11 x -6)$ = $\sage{factor(x^3 - 6*x^2 +11*x -6)}$
+    \end{itemize}
+    \item Solving polynomial equations.
+    \begin{itemize}
+     \item $solve([x^{2} - 4 x + 2 == -1], x)$ = $\sage{solve([x^2 - 4*x + 2 == -1], x)}$
+     \item Solutions to $x^{2}+ 3 x y + y^{2} = 0$ and $x - y = 4$ = $\sage{map(lambda z: [z[0].rhs().n(30), z[1].rhs().n(30)], solve([x^2+3*x*y+y^2 == 0, x - y == 4], x, y))}$
+    \end{itemize}
+    \item Use find\_root where solve does not work. Also useful to find solutions in a particular interval.
+    \begin{itemize}
+     \item $solve(cos(t) == sin(t), t)$ = $\sage{solve(cos(t) == sin(t), t)}$
+     \item $find \textunderscore root(cos(t) == sin(t), 0, pi)$ = $\sage{find_root(cos(t) == sin(t), 0, pi)}$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
 \end{document}
