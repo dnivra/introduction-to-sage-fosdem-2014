@@ -6,11 +6,13 @@
   \setbeamercovered{transparent}
 }
 
-
+\usepackage{amsmath}
 \usepackage[english]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage{times}
 \usepackage[T1]{fontenc}
+\usepackage{sagetex}
+\usepackage{upgreek}
 
 \title{An Introduction to Sage}
 
@@ -58,6 +60,25 @@
    \item Two modes: command(like Python shell) and notebook(web interface).
    \item IPython shell and Python programming language.
    \item ``sagerc`` file: \$HOME/.sage/init.sage or \$SAGE\_STARTUP\_FILE.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Arithmetic and built-in functions}
+  \begin{itemize}
+   \item General arithmetic supported by an (I)Python shell.
+   \begin{itemize}
+    \item \textasciicircum \hspace{0pt} is exponent and \textasciicircum\textasciicircum \hspace{0pt} is XOR.
+    \item For integers, / reduces to lowest fraction and // performs integer division.
+   \end{itemize}
+   \item Support mathematical functions and constants with arbitrary precision.
+   \begin{itemize}
+    \item \verb+pi.n(digits=20)+ = \sage{pi.n(digits=20)}
+    \item \verb+e.n(digits=25)+ = \sage{e.n(digits=25)}
+    \item \verb+golden_ratio.n(prec=60)+ = \sage{golden_ratio.n(prec=60)}
+    \item \verb+n(sin(pi/3), prec=60)+ = \sage{n(sin(pi/3), prec=60)}
+    \item \verb+sqrt(263).n(digits=20)+ = \sage{sqrt(263).n(digits=20)}
+    \item \verb+n(cos(5*pi/4), prec=60)+ = \sage{n(cos(5*pi/4), prec=60)}
+   \end{itemize}
   \end{itemize}
 \end{frame}
 
