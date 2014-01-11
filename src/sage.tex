@@ -84,6 +84,7 @@
 
 \begin{sagesilent}
  var('x y t')
+ c = circle((0, 0), 4)
 \end{sagesilent}
 
 \begin{frame}{Algebra}
@@ -104,6 +105,27 @@
      \item $find \textunderscore root(cos(t) == sin(t), 0, pi)$ = $\sage{find_root(cos(t) == sin(t), 0, pi)}$
     \end{itemize}
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Graph Plotting}
+  \begin{center}
+    Circle of radius 4 centered at (0, 0): $c = circle((0, 0), 4)$
+    \sageplot{plot(c, figsize=4)}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Graph Plotting(cont.)}
+  \begin{center}
+    Multiple functions in same plot:$plot(sin(x), -20, 20, rgbcolor = (0, 0, 1)) +$ \\ $plot(cos(x), -20, 20, rgbcolor = (1, 0, 0))$
+    \sageplot{plot(sin(x), -20, 20, rgbcolor = (0, 0, 1)) + plot(cos(x), -20, 20, rgbcolor = (1, 0, 0), figsize=3.5)}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Graph Plotting(cont.)}
+  \begin{center}
+    3D plots! $plot3d(x^2 + y^2, (x, -2, 2), (y, -2, 2))$
+    \sageplot{plot3d(x^2 + y^2, (x, -2, 2), (y, -2, 2), figsize=2)}
+  \end{center}
 \end{frame}
 
 \end{document}
