@@ -36,3 +36,4 @@ sagetex.sty
 *.sagetex.py
 *.sagetex.scmd
 *.sagetex.sout
+sage-plots-for-sage.tex/
