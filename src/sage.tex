@@ -85,6 +85,7 @@
 \begin{sagesilent}
  var('x y t')
  c = circle((0, 0), 4)
+ ring = IntegerModRing(12)
 \end{sagesilent}
 
 \begin{frame}{Algebra}
@@ -105,6 +106,25 @@
      \item $find \textunderscore root(cos(t) == sin(t), 0, pi)$ = $\sage{find_root(cos(t) == sin(t), 0, pi)}$
     \end{itemize}
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Number Theory}
+ \begin{itemize}
+  \item Modulus operations
+  \begin{itemize}
+   \item $ring = IntegerModRing(12); ring(27)$ gives $\sage{ring(27)}$
+   \item $mod(27, 12)$ = $\sage{mod(27, 12)}$ and $power \textunderscore mod(27, 2, 12)$ = $\sage{power_mod(27, 2, 12)}$
+  \end{itemize}
+  \item Primality test: $is \textunderscore prime(13)$ = $\sage{is_prime(13)}$, $is \textunderscore prime(15)$ = $\sage{is_prime(15)}$
+  \item $prime \textunderscore range(1, 35)$ = $\sage{prime_range(1, 35)}$.
+  \begin{itemize}
+    \item Generator version: $primes(1, 35)$
+  \end{itemize}
+  \item Count of primes: $prime \textunderscore pi(35)$ = $\sage{prime_pi(35)}$
+  \item $primes \textunderscore first \textunderscore n(11)$ = $\sage{primes_first_n(11)}$
+  \item $next \textunderscore prime(29)$ = \sage{next_prime(29)} and $previous \textunderscore prime$ = \sage{previous_prime(29)}
+  \item $factorial(20)$ = $\sage{factorial(20)}$, $factor(20)$ = $\sage{factor(20)}$, $divisors(20)$  = $\sage{divisors(20)}$
+ \end{itemize}
 \end{frame}
 
 \begin{frame}{Graph Plotting}
