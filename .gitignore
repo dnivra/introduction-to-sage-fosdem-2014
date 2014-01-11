@@ -37,3 +37,4 @@ sagetex.sty
 *.sagetex.scmd
 *.sagetex.sout
 sage-plots-for-sage.tex/
+*.tex.kate-swp
