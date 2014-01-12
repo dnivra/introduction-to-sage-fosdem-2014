@@ -88,6 +88,8 @@
  ring = IntegerModRing(12)
  def f(x,y):
   return math.sin(y*y+x*x)/math.sqrt(x*x+y*y+.0001)
+ P = Matrix([[1, 2], [3, 4]])
+ Q = Matrix([[7, 8], [5, 6]])
 \end{sagesilent}
 
 \begin{frame}{Algebra}
@@ -148,6 +150,20 @@
     $f = \frac{sin(y*y+x*x)}{\sqrt{(x*x+y*y+.0001)}}$: $plot3d(f, (-3, 3), (-3, 3))$
     \sageplot{plot3d(f,(-3,3),(-3,3), adaptive=True, color=rainbow(60, 'rgbtuple'), max_bend=.1, max_depth=15, figsize=2)}
   \end{center}
+\end{frame}
+
+\begin{frame}{Matrix algebra}
+  \begin{itemize}
+   \item Creating matrices: $m = Matrix([[1,2],[3,4],[5,6]])$
+   \item Arithmetic operations
+   \begin{itemize}
+    \item $P = Matrix([[1, 2], [3, 4]])$, $Q = Matrix([[7, 8], [5, 6]])$
+    \item P + Q = $\sage{P + Q}$, P - Q = $\sage{P - Q}$
+    \item P * Q = $\sage{P * Q}$, 4 * P = $\sage{4 * P}$
+   \end{itemize}
+   \item $P^{3}$ = $\sage{P^3}$, $P^{-1}$ = $\sage{P^-1}$, |P| = $\sage{P.det()}$
+   \item More functions: is\_singular, is\_symmetric, is\_skew\_symmetric, is\_invertible, is\_square
+  \end{itemize}
 \end{frame}
 
 \end{document}
