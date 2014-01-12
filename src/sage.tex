@@ -8,11 +8,15 @@
 
 \usepackage{amsmath}
 \usepackage[english]{babel}
+\usepackage{hyperref}
 \usepackage[latin1]{inputenc}
+\usepackage{moresize}
 \usepackage{times}
 \usepackage[T1]{fontenc}
 \usepackage{sagetex}
 \usepackage{upgreek}
+
+\hypersetup{colorlinks=true, urlcolor=blue}
 
 \title{An Introduction to Sage}
 
@@ -177,6 +181,47 @@
     \item \textbackslash sageblock and \textbackslash sagesilent: Embedding Sage code
    \end{itemize}
  \end{itemize}
+\end{frame}
+
+\begin{frame}{Sage scripts}
+ \begin{itemize}
+  \item Similar to Python scripts; .sage extension.
+  \item import names from sage.all
+  \item Run as sage <filename> <arguments> like Python.
+  \item Other possibilities: profiling, compiling sage files(Cython), access C functions directly.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Other applications}
+ \begin{itemize}
+  \item Interfacing with other algebra systems(GP/PARI, Singular, Maxima)
+  \item Polynomials
+  \item Combinatorics
+  \item Graph and group theory
+  \item Linear algebra
+  \item Elliptic curves
+  \item Advanced portions of everything discussed
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{References and further reading}
+ \begin{itemize}
+  \item Sage tutorial: \href{http://www.sagemath.org/doc/tutorial/index.html}{http://www.sagemath.org/doc/tutorial/index.html}
+  \item Thematic tutorials: \href{http://www.sagemath.org/doc/thematic\_tutorials/index.html}{http://www.sagemath.org/doc/thematic\_tutorials/index.html}
+  \item Tutorials for those with some mathematics background: \href{http://www.sagemath.org/doc/prep/index.html}{http://www.sagemath.org/doc/prep/index.html}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \HUGE Questions?
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \HUGE Thank you!
+  \end{center}
 \end{frame}
 
 \end{document}
