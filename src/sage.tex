@@ -47,16 +47,12 @@
 
 \begin{frame}{Outline}
   \begin{itemize}
-   \item Overview
-   \item Installation
+   \item Overview and Installation
    \item Basic usage
    \item Applications in various domains
    \item More applications and further reading
-   \item Questions
-  \end{itemize}
-  If time permits,
-  \begin{itemize}
    \item Contribution opportunities
+   \item Questions
   \end{itemize}
 \end{frame}
 
@@ -68,13 +64,32 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Sage: Overview}
+\begin{frame}{Sage: Overview and installation}
   \begin{itemize}
+   \item Installation
+    \begin{itemize}
+     \item Pre-built binaries for most OS.
+     \item PPA for Ubuntu.
+     \item Packaging efforts underway for Debian and Fedora.
+    \end{itemize}
    \item GPL licensed mathematics software.
    \item Unified interface to about 90 popular Python libraries.
    \item Two modes: command(like Python shell) and notebook(web interface).
    \item Power of IPython shell and Python programming language.
    \item ``sagerc`` file: \$HOME/.sage/init.sage or \$SAGE\_STARTUP\_FILE.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Basic usage}
+  \begin{itemize}
+   \item \textbf{Sage interpreter}: IPython shell.
+   \item \textbf{Sage scripts}
+   \begin{itemize}
+    \item Similar to Python scripts; .sage extension.
+    \item import names from sage.all
+    \item Run as sage <filename> <arguments> like Python.
+    \item Other possibilities: profiling, compiling sage files(Cython), access C functions directly.
+   \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -208,15 +223,6 @@
     \item Plots: \textbackslash sageplot\{plot(sin(x) + cos(x), -20, 20)\}
     \item \textbackslash sageblock and \textbackslash sagesilent: Embedding Sage code
    \end{itemize}
- \end{itemize}
-\end{frame}
-
-\begin{frame}{Sage scripts}
- \begin{itemize}
-  \item Similar to Python scripts; .sage extension.
-  \item import names from sage.all
-  \item Run as sage <filename> <arguments> like Python.
-  \item Other possibilities: profiling, compiling sage files(Cython), access C functions directly.
  \end{itemize}
 \end{frame}
 
