@@ -2,7 +2,8 @@
 
 \mode<presentation>
 {
-  \usetheme{Warsaw}
+  \usetheme{Hannover}
+  \usecolortheme{whale}
   \setbeamercovered{transparent}
 }
 
@@ -35,7 +36,14 @@
 \AtBeginSubsection[]
 {
   \begin{frame}<beamer>{Outline}
-    \tableofcontents[currentsection,currentsubsection]
+    \tableofcontents[currentsection, sectionstyle=show/show, subsectionstyle=show/shaded/hide]
+  \end{frame}
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection, sectionstyle=show/show, subsectionstyle=show/shaded/hide]
   \end{frame}
 }
 
@@ -46,14 +54,7 @@
 \end{frame}
 
 \begin{frame}{Outline}
-  \begin{itemize}
-   \item Overview and Installation
-   \item Basic usage
-   \item Applications in various domains
-   \item More applications and further reading
-   \item Contribution opportunities
-   \item Questions
-  \end{itemize}
+  \tableofcontents[hideallsubsections]
 \end{frame}
 
 \begin{frame}{About me}
@@ -64,7 +65,8 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Sage: Overview and installation}
+\section{Overview and Installation of Sage}
+\begin{frame}{Getting Sage}
   \begin{itemize}
    \item Installation
     \begin{itemize}
@@ -80,6 +82,8 @@
   \end{itemize}
 \end{frame}
 
+\section{Basic usage}
+\subsection{Interactive shell and scripting}
 \begin{frame}{Basic usage}
   \begin{itemize}
    \item \textbf{Sage interpreter}: IPython shell.
@@ -93,6 +97,7 @@
   \end{itemize}
 \end{frame}
 
+\subsection{Arithmetic and built-in functions}
 \begin{frame}[fragile]{Arithmetic and built-in functions}
   \begin{itemize}
    \item General arithmetic supported by an (I)Python shell.
@@ -126,6 +131,8 @@
 
 \end{sagesilent}
 
+\section{Applications in various domains}
+\subsection{Algebra}
 \begin{frame}{Algebra}
   \begin{itemize}
     \item Factorizing polynomials.
@@ -146,6 +153,7 @@
   \end{itemize}
 \end{frame}
 
+\subsection{Number Theory}
 \begin{frame}{Number Theory}
  \begin{itemize}
   \item Modulus: $mod(27, 12)$ = $\sage{mod(27, 12)}$ and $power \_ mod(27, 2, 12)$ = $\sage{power_mod(27, 2, 12)}$
@@ -161,6 +169,7 @@
  \end{itemize}
 \end{frame}
 
+\subsection{Calculus}
 \begin{frame}{Calculus}
   \begin{itemize}
     \item Differentiation
@@ -177,6 +186,7 @@
   \end{itemize}
 \end{frame}
 
+\subsection{Graph plotting}
 \begin{frame}{Graph Plotting}
   \begin{center}
     Circle of radius 4 centered at (0, 0): $c = circle((0, 0), 4)$
@@ -199,6 +209,7 @@
   \end{center}
 \end{frame}
 
+\subsection{Matrix algebra}
 \begin{frame}{Matrix algebra}
   \begin{itemize}
    \item Creating matrices: $m = Matrix([[1,2],[3,4],[5,6]])$
@@ -213,6 +224,7 @@
   \end{itemize}
 \end{frame}
 
+\subsection{Sage and \LaTeX}
 \begin{frame}{\LaTeX and Sage\TeX}
  \begin{itemize}
    \item \LaTeX representation: latex(P) $\sage{escape(latex(P))}$
@@ -226,6 +238,7 @@
  \end{itemize}
 \end{frame}
 
+\section{More applications and further reading}
 \begin{frame}{Other applications}
  \begin{itemize}
   \item Interfacing with other algebra systems(GP/PARI, Singular, Maxima)
@@ -246,6 +259,7 @@
  \end{itemize}
 \end{frame}
 
+\section{Contributing to Sagemath}
 \begin{frame}{Contributing to Sagemath}
  \begin{itemize}
   \item Packaging for Linux distros.
@@ -257,6 +271,7 @@
  \end{itemize}
 \end{frame}
 
+\section{Questions?}
 \begin{frame}
   \begin{center}
     \HUGE Questions?
